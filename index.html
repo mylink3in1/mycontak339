@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak WhatsApp & Telegram</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: rgb(184, 176, 176);
+      background-image: url("walp.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Tulisan bergerak atas */
+    .marquee {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      background: rgba(0,0,0,0.6);
+      padding: 10px 0;
+    }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 25s linear infinite;
+      font-size: 24px;
+      font-weight: bold;
+      color: yellow;
+    }
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Judul kedap-kedip */
+    h1 {
+      margin: 20px 0;
+      font-size: 42px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 0 0 6px black, 0 0 12px pink;
+      animation: blink 3s infinite;
+    }
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+        text-shadow: 
+          0 0 6px black,
+          0 0 15px pink,
+          0 0 25px hotpink;
+      }
+      50% {
+        opacity: 0.4;
+        text-shadow: 
+          0 0 3px black,
+          0 0 6px pink;
+      }
+    }
+
+    /* Grid container */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 700px;
+      margin: 40px auto;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(134, 126, 126, 0.1);
+      padding: 15px;
+      border-radius: 15px;
+      text-decoration: none;
+      color: white;
+      transition: transform 0.3s, box-shadow 0.3s;
+      opacity: 0;
+      animation: zoomIn 1s ease forwards;
+    }
+
+    /* Animasi muncul zoom & fade */
+    @keyframes zoomIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .item img {
+      width: 100%;
+      max-width: 180px;
+      background: rgb(0, 0, 0);
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(235, 11, 11, 0.934);
+      transition: transform 0.3s ease;
+    }
+
+    .item:hover img {
+      transform: rotate(5deg) scale(1.05);
+    }
+
+    /* Tulisan bawah gambar naik turun */
+    .item p {
+      margin-top: 12px;
+      font-size: 22px;
+      font-weight: bold;
+      text-shadow: 0 0 4px rgb(179, 9, 9);
+      animation: updown 1.5s infinite ease-in-out;
+    }
+    @keyframes updown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <!-- Tulisan bergerak -->
+  <div class="marquee">
+    <span>📢 WELCOME TO 5G339 , CLICK THE LOGO LINK BELOW TO FIND ME ! 🥰🥰</span>
+  </div>
+
+  <h1>🥰 YESSIE & CONNIE 🥰</h1>
+  
+  <div class="container">
+    <!-- WhatsApp 1 -->
+    <a class="item" href="https://wa.me/+60128596034" target="_blank">
+      <img src="339.jpg" alt="WhatsApp 5g339">
+      <p>WhatsApp 5g339</p>
+    </a>
+
+    <!-- WhatsApp 2 -->
+    <a class="item" href="https://wa.me/+60142078187" target="_blank">
+      <img src="919.jpg" alt="WhatsApp 5g919">
+      <p>WhatsApp 5g919</p>
+    </a>
+
+    <!-- WhatsApp 3 (baru) -->
+    <a class="item" href="https://wa.me/+60177520265" target="_blank">
+      <img src="backup1.jpg" alt="WhatsApp 5g339 backup 1">
+      <p>5g339 backup 1 </p>
+    </a>
+
+    <!-- WhatsApp 4 (baru) -->
+    <a class="item" href="https://wa.me/+60177409743" target="_blank">
+      <img src="backup1.jpg" alt="WhatsApp 5g339 backup 2">
+      <p>5g339 backup 2</p>
+    </a>
+
+    <!-- Telegram 1 -->
+    <a class="item" href="https://t.me/Yessie5g339" target="_blank">
+      <img src="339.jpg" alt="Telegram 5g339">
+      <p>Telegram 5g339</p>
+    </a>
+
+    <!-- Telegram 2 -->
+    <a class="item" href="https://t.me/connie5g339" target="_blank">
+      <img src="cuci339.jpg" alt="Telegram payout">
+      <p>Channel Payout</p>
+    </a>
+  </div>
+</body>
+</html>
