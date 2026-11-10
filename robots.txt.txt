@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://mycontak5g339.vercel.app/sitemap.xml
